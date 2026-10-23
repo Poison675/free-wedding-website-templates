@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alex &amp; Jordan · June 20, 2027</title>
+<meta name="description" content="Our wedding website: schedule, travel, RSVP and registry.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400;700&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBF8F3;--ink:#3B3A36;--accent:#7A8B6F;--soft:#DDE3D6}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Lato', sans-serif;font-weight:300;line-height:1.7}
+a{color:var(--accent)}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--soft);display:flex;justify-content:center;flex-wrap:wrap;gap:.4rem 1.6rem;padding:.8rem 1rem}
+nav a{text-decoration:none;color:var(--ink);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase}
+nav a:hover{color:var(--accent)}
+header{min-height:88vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:4rem 1.5rem;background:linear-gradient(180deg,#DDE3D6,#FBF8F3)}
+.kicker{letter-spacing:.3em;text-transform:uppercase;font-size:.75rem;color:var(--accent)}
+h1{font-family:'Great Vibes', cursive;font-weight:400;font-size:clamp(3rem,10vw,6.5rem);line-height:1.1;margin:.6rem 0}
+.date{font-family:'Libre Baskerville', serif;font-style:italic;font-size:1.25rem}
+.rule{width:60px;height:1px;background:var(--accent);margin:1.6rem auto}
+.btn{display:inline-block;margin-top:1.4rem;padding:.8rem 2rem;border:1px solid var(--accent);color:var(--ink);text-decoration:none;letter-spacing:.2em;text-transform:uppercase;font-size:.75rem;transition:.2s}
+.btn:hover{background:var(--accent);color:var(--bg)}
+section{max-width:920px;margin:0 auto;padding:5rem 1.5rem;text-align:center}
+h2{font-family:'Libre Baskerville', serif;font-weight:400;font-size:2rem;margin-bottom:.4rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.4rem;margin-top:2rem;text-align:left}
+.card{background:var(--soft);padding:1.6rem;border-radius:4px}
+.card h3{font-family:'Libre Baskerville', serif;font-weight:400;font-size:1.2rem;margin-bottom:.3rem}
+.time{color:var(--accent);font-weight:600;font-size:.8rem;letter-spacing:.15em;text-transform:uppercase}
+.story p{max-width:640px;margin:1rem auto}
+details{text-align:left;border-bottom:1px solid var(--soft);padding:1rem 0}
+summary{cursor:pointer;font-family:'Libre Baskerville', serif;font-size:1.05rem}
+form{display:grid;gap:1rem;max-width:480px;margin:2rem auto 0;text-align:left}
+label{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase}
+input,select,textarea{width:100%;padding:.75rem;border:1px solid var(--soft);background:transparent;color:var(--ink);font:inherit}
+footer{text-align:center;padding:3rem 1.5rem;font-size:.85rem;border-top:1px solid var(--soft)}
+.credit{margin-top:1rem;font-size:.75rem;opacity:.75}
+@media (max-width:600px){section{padding:3.5rem 1.2rem}nav{gap:.3rem 1rem}}
+</style>
+</head>
+<body>
+<nav><a href="#story">Our Story</a><a href="#schedule">Schedule</a><a href="#travel">Travel</a><a href="#registry">Registry</a><a href="#faq">FAQ</a><a href="#rsvp">RSVP</a></nav>
+<header>
+  <p class="kicker">We're getting married</p>
+  <h1>Alex &amp; Jordan</h1>
+  <p class="date">Saturday, June 20, 2027 · Asheville, North Carolina</p>
+  <a class="btn" href="#rsvp">RSVP</a>
+</header>
+<section id="story" class="story">
+  <h2>Our Story</h2><div class="rule"></div>
+  <p>We met on a rainy Tuesday at a used bookstore, both reaching for the last copy of the same novel. Five years, two apartments and one very spoiled dog later, we're saying yes.</p>
+  <p>Replace this text with your own story: how you met, the proposal, and what you're most excited to celebrate with everyone.</p>
+</section>
+<section id="schedule">
+  <h2>The Schedule</h2><div class="rule"></div>
+  <div class="grid">
+    <div class="card"><p class="time">4:30 PM</p><h3>Ceremony</h3><p>The Garden Terrace<br>123 Example Lane</p></div>
+    <div class="card"><p class="time">5:00 PM</p><h3>Cocktail Hour</h3><p>Drinks and lawn games on the patio.</p></div>
+    <div class="card"><p class="time">6:00 PM</p><h3>Dinner &amp; Dancing</h3><p>The Main Hall. Send-off at 10:00 PM.</p></div>
+  </div>
+</section>
+<section id="travel">
+  <h2>Travel &amp; Stay</h2><div class="rule"></div>
+  <div class="grid">
+    <div class="card"><h3>Hotel Block</h3><p>Example Inn. Mention "Alex &amp; Jordan Wedding" for our group rate by May 20.</p></div>
+    <div class="card"><h3>Getting There</h3><p>The nearest airport is about 20 minutes away. A shuttle runs from the hotel at 4:00 PM.</p></div>
+  </div>
+</section>
+<section id="registry">
+  <h2>Registry</h2><div class="rule"></div>
+  <p>Your presence is the greatest gift. If you'd like to give something more, our registry is here.</p>
+  <a class="btn" href="#">View Registry</a>
+</section>
+<section id="faq">
+  <h2>Questions</h2><div class="rule"></div>
+  <details><summary>What should I wear?</summary><p>Garden formal. The ceremony is outdoors on grass, so skip the stilettos.</p></details>
+  <details><summary>Can I bring a plus-one?</summary><p>If your invitation includes a guest, their name will be on it.</p></details>
+  <details><summary>Are kids welcome?</summary><p>We love your little ones, but this will be an adults-only celebration.</p></details>
+</section>
+<section id="rsvp">
+  <h2>RSVP</h2><div class="rule"></div>
+  <p>Kindly reply by May 1, 2027.</p>
+  <!-- Static sites can't receive form posts. Point action= at a form service (e.g. Formspree) or replace with a link to a Google Form. -->
+  <form action="#" method="post">
+    <div><label for="n">Full name</label><input id="n" name="name" required></div>
+    <div><label for="a">Will you attend?</label><select id="a" name="attending"><option>Joyfully accepts</option><option>Regretfully declines</option></select></div>
+    <div><label for="g">Number of guests</label><input id="g" name="guests" type="number" min="1" max="4" value="1"></div>
+    <div><label for="d">Dietary needs</label><textarea id="d" name="dietary" rows="3"></textarea></div>
+    <button class="btn" type="submit">Send RSVP</button>
+  </form>
+</section>
+<footer>
+  <p>Alex &amp; Jordan · June 20, 2027</p>
+  <p class="credit">Template: Sage Garden (free, MIT license). Want a custom wedding website? Happiest Beginnings</p>
+</footer>
+</body>
+</html>
